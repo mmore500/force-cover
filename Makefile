@@ -47,7 +47,7 @@
 # reflects a release build with CMake and Ninja. binary build of LLVM, point it
 # to the bin/ directory.
 
-CXX := clang++
+CXX ?= clang++
 LVM_SRC_PATH := /usr/lib/llvm
 LLVM_BUILD_PATH := $(LLVM_SRC_PATH)/build
 LLVM_BIN_PATH := $(LLVM_SRC_PATH)/bin
